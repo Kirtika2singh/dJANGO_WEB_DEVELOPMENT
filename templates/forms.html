@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <br><br><br><br><br><br>
+       
+            <div class="mx-left" style="width: 50%; margin-left: 10%;">
+
+            <h1>Student's Details  Entry.</h1>  <br><br>
+
+                <!-- {% for i in student %}
+                {{i}}
+                {% endfor %} -->
+
+                    <form action  = '', method = "post">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <input type = "submit" value = "Submit" class = "btn btn-success" style = "border-radius: 20px;"><br><br><br><br><br><br>
+                        
+                    </form> 
+            </div>
+   
+</body>
+</html>

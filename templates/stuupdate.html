@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+<!-- page title -->
+<section class="page-title bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">Student  Page.</h1>
+        </div>
+      </div>
+    </div>
+    
+  
+  <!-- portfolio -->
+  <section class="section">
+    <div class="container">
+     
+    </div>
+  </section>
+  <!-- /portfolio -->
+  
+  <!-- clients -->
+  <section class="section bg-light">
+    <div class="container">
+        
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Students Update List</h2>
+        </div>
+      </div>
+      <div class="row">
+        
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class = "button" value="Save">
+        
+        
+    </form>
+    
+        
+          
+      
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /clients -->
+  
+
+   
+</body>
+</html>
